@@ -16,7 +16,7 @@ public class ProyectoPP {
     public static void main(String[] args) {
         System.out.println("Proyecto");
         
-        System.out.println("bausjdbasjd");
+        System.out.println("2");
     }
     
 }
