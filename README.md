@@ -1,0 +1,2 @@
+# ProyectoPP
+Diseño calculadora Patrones
