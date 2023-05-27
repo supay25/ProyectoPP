@@ -16,7 +16,7 @@ public class ProyectoPP {
     public static void main(String[] args) {
         System.out.println("Proyecto");
         
-        System.out.println("Veneco es una puta, correcto mira vos");
+        System.out.println("VHola");
     }
     
 }
