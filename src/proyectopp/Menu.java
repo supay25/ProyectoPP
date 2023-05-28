@@ -55,7 +55,7 @@ public class Menu extends javax.swing.JFrame {
             }
         });
 
-        btnDis.setText("distancias");
+        btnDis.setText("Tiempo");
         btnDis.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnDisActionPerformed(evt);
@@ -85,7 +85,7 @@ public class Menu extends javax.swing.JFrame {
                 .addComponent(btnReg)
                 .addGap(117, 117, 117)
                 .addComponent(btnGeo)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 136, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 146, Short.MAX_VALUE)
                 .addComponent(btnDis)
                 .addGap(83, 83, 83))
             .addGroup(jPanel1Layout.createSequentialGroup()
@@ -137,6 +137,9 @@ public class Menu extends javax.swing.JFrame {
 
     private void btnDisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDisActionPerformed
         // TODO add your handling code here:
+        panelTiempo tiempo = new panelTiempo();
+
+        tiempo.show();
     }//GEN-LAST:event_btnDisActionPerformed
 
     private void btnGeoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGeoActionPerformed
@@ -145,6 +148,10 @@ public class Menu extends javax.swing.JFrame {
 
     private void btnIMCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIMCActionPerformed
         // TODO add your handling code here:
+        
+        panelIMC imc = new panelIMC();
+
+        imc.show();
     }//GEN-LAST:event_btnIMCActionPerformed
 
     private void btnHexActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHexActionPerformed

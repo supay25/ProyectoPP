@@ -48,7 +48,7 @@
                   <Component id="btnReg" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="117" max="-2" attributes="0"/>
                   <Component id="btnGeo" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="136" max="32767" attributes="0"/>
+                  <EmptySpace pref="146" max="32767" attributes="0"/>
                   <Component id="btnDis" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="83" max="-2" attributes="0"/>
               </Group>
@@ -117,7 +117,7 @@
         </Component>
         <Component class="javax.swing.JButton" name="btnDis">
           <Properties>
-            <Property name="text" type="java.lang.String" value="distancias"/>
+            <Property name="text" type="java.lang.String" value="Tiempo"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDisActionPerformed"/>
