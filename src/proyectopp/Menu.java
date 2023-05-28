@@ -137,13 +137,18 @@ public class Menu extends javax.swing.JFrame {
 
     private void btnDisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDisActionPerformed
         // TODO add your handling code here:
-        panelTiempo tiempo = new panelTiempo();
+        panelDis tiempo = new panelDis();
 
         tiempo.show();
     }//GEN-LAST:event_btnDisActionPerformed
 
     private void btnGeoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGeoActionPerformed
         // TODO add your handling code here:
+        panelGeometrico cal = new panelGeometrico();
+        
+        cal.show();
+        this.setVisible(false);
+        
     }//GEN-LAST:event_btnGeoActionPerformed
 
     private void btnIMCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIMCActionPerformed
@@ -152,6 +157,7 @@ public class Menu extends javax.swing.JFrame {
         panelIMC imc = new panelIMC();
 
         imc.show();
+        this.setVisible(false);
     }//GEN-LAST:event_btnIMCActionPerformed
 
     private void btnHexActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHexActionPerformed
