@@ -15,6 +15,8 @@ public class panelDis extends javax.swing.JPanel {
      */
     public panelDis() {
         initComponents();
+        
+        
     }
 
     /**

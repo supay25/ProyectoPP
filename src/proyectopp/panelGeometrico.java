@@ -15,6 +15,9 @@ public class panelGeometrico extends javax.swing.JFrame {
      */
     public panelGeometrico() {
         initComponents();
+        setResizable(false);
+        this.setLocationRelativeTo(null);
+        
     }
 
     /**
