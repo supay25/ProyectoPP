@@ -14,9 +14,8 @@ public class ProyectoPP {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println("Proyecto");
-        
-        System.out.println("2");
+        Menu men = new Menu();
+        men.show();
     }
     
 }
