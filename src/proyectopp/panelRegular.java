@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package proyectopp;
-import javax.swing.JOptionPane;
+import javax.swing.JOptionPane; // librerias
 
 
 /**
@@ -282,6 +282,7 @@ public class panelRegular extends javax.swing.JFrame {
 
     private void btnSumaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSumaActionPerformed
         // TODO add your handling code here:
+        
         String numero = lblOperacion2.getText();
         if(numero1 == 0 && numero!="" && numero!=null) {
             numero1 = Integer.parseInt(numero);
@@ -302,6 +303,7 @@ public class panelRegular extends javax.swing.JFrame {
 
     private void btnRestaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRestaActionPerformed
         // TODO add your handling code here:
+        //boton que realiza la resta
         String numero = lblOperacion2.getText();
         if(numero1 == 0 && numero!="" && numero!=null) {
             numero1 = Integer.parseInt(numero);
@@ -322,6 +324,7 @@ public class panelRegular extends javax.swing.JFrame {
 
     private void btnDiviActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDiviActionPerformed
         // TODO add your handling code here:
+        //boton que realiza la division
         String numero = lblOperacion2.getText();
         if(numero1 == 0 && numero!="" && numero!=null) {
             numero1 = Integer.parseInt(numero);
@@ -342,6 +345,7 @@ public class panelRegular extends javax.swing.JFrame {
 
     private void btnCEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCEActionPerformed
         // TODO add your handling code here:
+        //empieza de nueva la caluculadora y borra asignaciones previas
         lblOperacion2.setText("");
         numero1 = 0;
         numero2 = 0;
@@ -351,7 +355,7 @@ public class panelRegular extends javax.swing.JFrame {
 
     private void btn0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn0ActionPerformed
         // TODO add your handling code here:
-
+        // marca el 0
         String numero = String.valueOf(numero2);
 
         if(numero1== 0) {
@@ -370,6 +374,7 @@ public class panelRegular extends javax.swing.JFrame {
 
     private void btnMultiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMultiActionPerformed
         // TODO add your handling code here:
+        //realiza la multiplicacion
         String numero = lblOperacion2.getText();
         if(numero1 == 0 && numero!="" && numero!=null) {
             numero1 = Integer.parseInt(numero);
@@ -389,7 +394,7 @@ public class panelRegular extends javax.swing.JFrame {
     }//GEN-LAST:event_btnMultiActionPerformed
 
     private void btnResultadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnResultadoActionPerformed
-
+//metodo que muestra el resultado al usuario
         int resultado = 0;
         if(numero1 == 0 && numero2 == 0) {
             JOptionPane.showMessageDialog(null, "Debe digitar mas numeros");
@@ -438,6 +443,7 @@ public class panelRegular extends javax.swing.JFrame {
 
     private void btn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn2ActionPerformed
         // TODO add your handling code here:
+         // marca el 2
         String numero = String.valueOf(numero2);
 
         if(numero1== 0) {
@@ -456,7 +462,7 @@ public class panelRegular extends javax.swing.JFrame {
 
     private void btn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn3ActionPerformed
         // TODO add your handling code here:
-
+ // marca el 3
         String numero = String.valueOf(numero2);
 
         if(numero1== 0) {
@@ -475,7 +481,7 @@ public class panelRegular extends javax.swing.JFrame {
 
     private void btn4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn4ActionPerformed
         // TODO add your handling code here:
-
+ // marca el 4
         String numero = String.valueOf(numero2);
 
         if(numero1== 0) {
@@ -495,7 +501,7 @@ public class panelRegular extends javax.swing.JFrame {
     private void btn5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn5ActionPerformed
         // TODO add your handling code here:
         String numero = String.valueOf(numero2);
-
+ // marca el 5
         if(numero1== 0) {
             String texto = lblOperacion2.getText();
             texto = texto + "5";
@@ -512,7 +518,7 @@ public class panelRegular extends javax.swing.JFrame {
 
     private void btn6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn6ActionPerformed
         // TODO add your handling code here:
-
+ // marca el 6
         String numero = String.valueOf(numero2);
 
         if(numero1== 0) {
@@ -532,7 +538,7 @@ public class panelRegular extends javax.swing.JFrame {
     private void btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1ActionPerformed
         // TODO add your handling code here:
         String numero = String.valueOf(numero2);
-
+ // marca el 1
         if(numero1== 0) {
             String texto = lblOperacion2.getText();
             texto = texto + "1";
@@ -549,7 +555,7 @@ public class panelRegular extends javax.swing.JFrame {
 
     private void btn8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn8ActionPerformed
         // TODO add your handling code here:
-
+ // marca el 8
         String numero = String.valueOf(numero2);
 
         if(numero1== 0) {
@@ -569,7 +575,7 @@ public class panelRegular extends javax.swing.JFrame {
     private void btn9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn9ActionPerformed
         // TODO add your handling code here:
         String numero = String.valueOf(numero2);
-
+ // marca el 9
         if(numero1== 0) {
             String texto = lblOperacion2.getText();
             texto = texto + "9";
@@ -586,7 +592,7 @@ public class panelRegular extends javax.swing.JFrame {
 
     private void btn7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn7ActionPerformed
         // TODO add your handling code here:
-
+ // marca el 7
         String numero = String.valueOf(numero2);
 
         if(numero1== 0) {

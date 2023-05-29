@@ -231,6 +231,7 @@ public class panelGeometrico extends javax.swing.JFrame {
 
     private void btnCalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalcularActionPerformed
         // TODO add your handling code here:
+        //boton que calcula el area
         try{
             double area= Double.parseDouble(txtArea.getText());
             double altura= Double.parseDouble(txtAltura.getText());
@@ -250,7 +251,8 @@ public class panelGeometrico extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCalcularActionPerformed
 
     private void btnLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimpiarActionPerformed
-        // TODO add your handling code here:
+        // TODO add your handling code here: 
+        //boton de limpiar
         txtArea.setText(" ");
         txtAltura.setText(" ");
         lblResultado.setText(" ");
@@ -258,6 +260,7 @@ public class panelGeometrico extends javax.swing.JFrame {
 
     private void btnExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitActionPerformed
         // TODO add your handling code here:
+        //boton para salir al menu principal
         this.setVisible(false);
         Menu menu = new Menu();
         menu.setVisible(true);
@@ -265,6 +268,7 @@ public class panelGeometrico extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
+         //boton que calcula la hipotenusa
         try{
             
             double catetoO = Double.parseDouble(txtCatetoO.getText());
