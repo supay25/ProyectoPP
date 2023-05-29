@@ -156,7 +156,7 @@ public class Menu extends javax.swing.JFrame {
 
     private void btnDisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDisActionPerformed
         // TODO add your handling code here:
-        panelDis tiempo = new panelDis();
+        panelTiempo tiempo = new panelTiempo();
 
         tiempo.show();
         this.setVisible(false);
@@ -182,6 +182,10 @@ public class Menu extends javax.swing.JFrame {
 
     private void btnHexActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHexActionPerformed
         // TODO add your handling code here:
+        panelHexa hex = new panelHexa();
+
+        hex.show();
+        this.setVisible(false);
     }//GEN-LAST:event_btnHexActionPerformed
 
     private void btnSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirActionPerformed
