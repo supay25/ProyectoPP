@@ -191,7 +191,8 @@ public class panelIMC extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+    
+    //Boton calcular y sus funciones
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         try{
@@ -199,13 +200,14 @@ public class panelIMC extends javax.swing.JFrame {
             double height= Double.parseDouble(tfHeight.getText());
             
             
-            
+            //Formula para calcular IMC
             double calculo= weight/(height*height);
             
             System.out.println(calculo);
             
             lCalculo.setText(String.valueOf(calculo));
             
+            //Indica en que rango del imc se esta 
             if(calculo < 18.5){
                 lCalculo1.setText(String.valueOf(" Peso bajo"));
             }
@@ -228,13 +230,15 @@ public class panelIMC extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 
+    //Boton para clear 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
                 tfWeight.setText(" ");
                 tfHeight.setText(" ");
 
     }//GEN-LAST:event_jButton2ActionPerformed
-
+    
+    //Boton para volver al menu
     private void btnExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitActionPerformed
         // TODO add your handling code here:
         Menu menu = new Menu();
