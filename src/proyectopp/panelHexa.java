@@ -4,6 +4,8 @@
  */
 package proyectopp;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author javi
@@ -38,10 +40,10 @@ public class panelHexa extends javax.swing.JFrame {
         jLabel17 = new javax.swing.JLabel();
         BtnClear3 = new javax.swing.JButton();
         TxtDecimal = new javax.swing.JTextField();
-        TxtHexadecimal = new javax.swing.JTextField();
-        TxtOctal = new javax.swing.JTextField();
-        TxtBinario = new javax.swing.JTextField();
         jLabel18 = new javax.swing.JLabel();
+        Lb1 = new javax.swing.JLabel();
+        Lb2 = new javax.swing.JLabel();
+        Lb3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -84,7 +86,7 @@ public class panelHexa extends javax.swing.JFrame {
         jLabel17.setText("Hexadecimal");
 
         BtnClear3.setFont(new java.awt.Font("Century Gothic", 0, 24)); // NOI18N
-        BtnClear3.setText("Clear");
+        BtnClear3.setText("Limpiar");
         BtnClear3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BtnClear3ActionPerformed(evt);
@@ -93,27 +95,25 @@ public class panelHexa extends javax.swing.JFrame {
 
         TxtDecimal.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
 
-        TxtHexadecimal.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
-        TxtHexadecimal.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                TxtHexadecimalActionPerformed(evt);
-            }
-        });
-
-        TxtOctal.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
-
-        TxtBinario.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
-
         jLabel18.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
         jLabel18.setForeground(new java.awt.Color(255, 255, 255));
         jLabel18.setText("Sistema Numérico");
+
+        Lb1.setFont(new java.awt.Font("Century Gothic", 0, 24)); // NOI18N
+        Lb1.setForeground(new java.awt.Color(255, 255, 255));
+
+        Lb2.setFont(new java.awt.Font("Century Gothic", 0, 24)); // NOI18N
+        Lb2.setForeground(new java.awt.Color(255, 255, 255));
+
+        Lb3.setFont(new java.awt.Font("Century Gothic", 0, 24)); // NOI18N
+        Lb3.setForeground(new java.awt.Color(255, 255, 255));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(108, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel13)
@@ -124,33 +124,29 @@ public class panelHexa extends javax.swing.JFrame {
                                 .addComponent(jLabel18)
                                 .addGap(127, 127, 127)
                                 .addComponent(BtnMenu2))
-                            .addComponent(BtnConvertir3))
-                        .addGap(34, 34, 34))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(294, 294, 294)
-                        .addComponent(BtnClear3, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap())))
+                            .addComponent(BtnConvertir3)
+                            .addComponent(BtnClear3, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(34, 34, 34))))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addGap(19, 19, 19)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel17)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(TxtHexadecimal, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addGroup(jPanel1Layout.createSequentialGroup()
-                            .addComponent(jLabel15)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(TxtBinario, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel14)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 51, Short.MAX_VALUE)
-                            .addComponent(TxtDecimal, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(jPanel1Layout.createSequentialGroup()
-                            .addComponent(jLabel16)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(TxtOctal, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(62, 214, Short.MAX_VALUE))
+                            .addComponent(jLabel15)
+                            .addComponent(jLabel16))
+                        .addGap(51, 51, 51)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(Lb2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(TxtDecimal, javax.swing.GroupLayout.DEFAULT_SIZE, 218, Short.MAX_VALUE)
+                                .addComponent(Lb1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addGap(62, 214, Short.MAX_VALUE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jLabel17)
+                        .addGap(18, 18, 18)
+                        .addComponent(Lb3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(302, 302, 302))))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -169,24 +165,23 @@ public class panelHexa extends javax.swing.JFrame {
                             .addComponent(TxtDecimal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(78, 78, 78)
+                                .addGap(72, 72, 72)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(jLabel16)
-                                    .addComponent(TxtOctal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addComponent(Lb2)
+                                    .addComponent(BtnClear3)))
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(24, 24, 24)
+                                .addGap(27, 27, 27)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(jLabel15)
-                                    .addComponent(TxtBinario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                    .addComponent(Lb1)))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(39, 39, 39)
-                        .addComponent(BtnConvertir3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(BtnClear3)))
-                .addGap(17, 17, 17)
+                        .addComponent(BtnConvertir3)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 20, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel17)
-                    .addComponent(TxtHexadecimal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(Lb3))
                 .addContainerGap(53, Short.MAX_VALUE))
         );
 
@@ -214,28 +209,37 @@ public class panelHexa extends javax.swing.JFrame {
 
     private void BtnConvertir3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnConvertir3ActionPerformed
         // TODO add your handling code here:
+        
+        try{
+        //Este int es la variable para el decimal ingresado.
         int decimal = Integer.parseInt(TxtDecimal.getText());
+        //Convierte de decimal a Hexadecimal
         String hex = Integer.toHexString(decimal);
-        TxtHexadecimal.setText(String.valueOf(hex));
-
+        Lb3.setText(String.valueOf(hex));
+        //Convierte de decimal a Binario
         String bin = Integer.toBinaryString(decimal);
-        TxtBinario.setText(String.valueOf(bin));
-
+        Lb1.setText(String.valueOf(bin));
+        //Convierte de decimal a Octal
         String oct = Integer.toOctalString(decimal);
-        TxtOctal.setText(String.valueOf(oct));
+        Lb2.setText(String.valueOf(oct));
+        }
+        catch(Exception e) {
+            //Muestra mensaje si no escribió un numero.
+            JOptionPane.showMessageDialog(rootPane,
+                    "Solo escribir Números");
+            
+        }
+        
+        
     }//GEN-LAST:event_BtnConvertir3ActionPerformed
 
     private void BtnClear3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnClear3ActionPerformed
         // TODO add your handling code here:
         TxtDecimal.setText("");
-        TxtOctal.setText("");
-        TxtBinario.setText("");
-        TxtHexadecimal.setText("");
+        Lb1.setText("");
+        Lb2.setText("");
+        Lb3.setText("");
     }//GEN-LAST:event_BtnClear3ActionPerformed
-
-    private void TxtHexadecimalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtHexadecimalActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_TxtHexadecimalActionPerformed
 
     /**
      * @param args the command line arguments
@@ -276,10 +280,10 @@ public class panelHexa extends javax.swing.JFrame {
     private javax.swing.JButton BtnClear3;
     private javax.swing.JButton BtnConvertir3;
     private javax.swing.JButton BtnMenu2;
-    private javax.swing.JTextField TxtBinario;
+    private javax.swing.JLabel Lb1;
+    private javax.swing.JLabel Lb2;
+    private javax.swing.JLabel Lb3;
     private javax.swing.JTextField TxtDecimal;
-    private javax.swing.JTextField TxtHexadecimal;
-    private javax.swing.JTextField TxtOctal;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;

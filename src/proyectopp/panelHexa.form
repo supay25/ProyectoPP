@@ -44,7 +44,7 @@
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="1" attributes="0">
-                  <EmptySpace max="32767" attributes="0"/>
+                  <EmptySpace pref="108" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="1" attributes="0">
                           <Component id="jLabel13" min="-2" max="-2" attributes="0"/>
@@ -58,13 +58,9 @@
                                   <Component id="BtnMenu2" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Component id="BtnConvertir3" alignment="1" min="-2" max="-2" attributes="0"/>
+                              <Component id="BtnClear3" alignment="1" min="-2" pref="140" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="294" max="-2" attributes="0"/>
-                          <Component id="BtnClear3" min="-2" pref="140" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
@@ -72,29 +68,28 @@
                   <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="1" attributes="0">
                       <Group type="102" alignment="1" attributes="0">
-                          <Component id="jLabel17" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="TxtHexadecimal" min="-2" pref="218" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="jLabel14" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel15" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel16" alignment="0" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="Lb2" max="32767" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="TxtDecimal" pref="218" max="32767" attributes="0"/>
+                                  <Component id="Lb1" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace min="62" pref="214" max="32767" attributes="0"/>
                       </Group>
-                      <Group type="103" alignment="1" groupAlignment="0" max="-2" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="jLabel15" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="32767" attributes="0"/>
-                              <Component id="TxtBinario" min="-2" pref="218" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="jLabel14" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace pref="51" max="32767" attributes="0"/>
-                              <Component id="TxtDecimal" min="-2" pref="218" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="jLabel16" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="32767" attributes="0"/>
-                              <Component id="TxtOctal" min="-2" pref="218" max="-2" attributes="0"/>
-                          </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <Component id="jLabel17" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="Lb3" max="32767" attributes="0"/>
+                          <EmptySpace min="-2" pref="302" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <EmptySpace min="62" pref="214" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -117,17 +112,18 @@
                           </Group>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="78" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="72" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel16" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="TxtOctal" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="Lb2" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="BtnClear3" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel15" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="TxtBinario" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="Lb1" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
@@ -135,14 +131,12 @@
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
                           <Component id="BtnConvertir3" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="32767" attributes="0"/>
-                          <Component id="BtnClear3" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
+                  <EmptySpace pref="20" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabel17" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="TxtHexadecimal" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="Lb3" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace pref="53" max="32767" attributes="0"/>
               </Group>
@@ -232,37 +226,13 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Century Gothic" size="24" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Clear"/>
+            <Property name="text" type="java.lang.String" value="Limpiar"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BtnClear3ActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="TxtDecimal">
-          <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Century Gothic" size="18" style="0"/>
-            </Property>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JTextField" name="TxtHexadecimal">
-          <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Century Gothic" size="18" style="0"/>
-            </Property>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TxtHexadecimalActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JTextField" name="TxtOctal">
-          <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Century Gothic" size="18" style="0"/>
-            </Property>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JTextField" name="TxtBinario">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Century Gothic" size="18" style="0"/>
@@ -278,6 +248,36 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Sistema Num&#xe9;rico"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="Lb1">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Century Gothic" size="24" style="0"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="Lb2">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Century Gothic" size="24" style="0"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="Lb3">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Century Gothic" size="24" style="0"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
           </Properties>
         </Component>
       </SubComponents>
