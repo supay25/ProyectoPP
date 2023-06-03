@@ -40,6 +40,7 @@ public class Menu extends javax.swing.JFrame {
         jLabel1.setText("MultiCalc");
 
         btnReg.setBackground(new java.awt.Color(2, 90, 224));
+        btnReg.setForeground(new java.awt.Color(255, 255, 255));
         btnReg.setText("Regular");
         btnReg.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -48,6 +49,7 @@ public class Menu extends javax.swing.JFrame {
         });
 
         btnGeo.setBackground(new java.awt.Color(2, 90, 212));
+        btnGeo.setForeground(new java.awt.Color(255, 255, 255));
         btnGeo.setText("Geometricas\n");
         btnGeo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -56,6 +58,7 @@ public class Menu extends javax.swing.JFrame {
         });
 
         btnDis.setBackground(new java.awt.Color(2, 90, 200));
+        btnDis.setForeground(new java.awt.Color(255, 255, 255));
         btnDis.setText("Tiempo");
         btnDis.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -64,6 +67,7 @@ public class Menu extends javax.swing.JFrame {
         });
 
         btnIMC.setBackground(new java.awt.Color(2, 90, 160));
+        btnIMC.setForeground(new java.awt.Color(255, 255, 255));
         btnIMC.setText("IMC");
         btnIMC.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -72,7 +76,8 @@ public class Menu extends javax.swing.JFrame {
         });
 
         btnHex.setBackground(new java.awt.Color(2, 90, 180));
-        btnHex.setText("Hexa");
+        btnHex.setForeground(new java.awt.Color(255, 255, 255));
+        btnHex.setText("Sist. Num.");
         btnHex.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnHexActionPerformed(evt);
@@ -80,7 +85,6 @@ public class Menu extends javax.swing.JFrame {
         });
 
         btnSalir.setBackground(new java.awt.Color(164, 214, 98));
-        btnSalir.setForeground(new java.awt.Color(0, 0, 0));
         btnSalir.setText("SALIR");
         btnSalir.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnSalir.addActionListener(new java.awt.event.ActionListener() {
